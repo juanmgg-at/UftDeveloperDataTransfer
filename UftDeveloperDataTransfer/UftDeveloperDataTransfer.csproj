@@ -82,6 +82,7 @@
     <Compile Include="UnitTestClassBase.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="WPF\BasePageWPF.cs" />
+    <Compile Include="WPF\SimulationPageWPF.cs" />
     <Compile Include="WPF\OpenSimulationPageWPF.cs" />
     <None Include="App.config" />
     <Compile Include="Properties\AssemblyInfo.cs" />

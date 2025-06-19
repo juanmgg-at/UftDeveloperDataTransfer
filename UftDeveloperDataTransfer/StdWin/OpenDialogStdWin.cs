@@ -1,5 +1,6 @@
 ﻿using HP.LFT.SDK;
 using HP.LFT.SDK.StdWin;
+using System;
 
 namespace UftDeveloperDataTransfer
 {
@@ -42,6 +43,25 @@ namespace UftDeveloperDataTransfer
                 AttachedText = @"File &name:"
             });
 
+            //var fileNameEditField = Desktop.Describe<IWindow>(new WindowDescription
+            //{
+            //    WindowTitleRegExp = @"<No Document> - Aspen Plus V15 - aspenONE",
+            //    ObjectName = @"apwnShellWindow",
+            //    FullType = @"window"
+            //})
+            //.Describe<IDialog>(new DialogDescription
+            //{
+            //    NativeClass = @"#32770",
+            //    Text = @"Open",
+            //    IsOwnedWindow = true,
+            //    IsChildWindow = false
+            //})
+            //.Describe<IEditField>(new EditFieldDescription
+            //{
+            //    NativeClass = @"Edit",
+            //    AttachedText = @"File &name:"
+            //});
+
             openButton = openDialog.Describe<IButton>(new ButtonDescription
             {
                 NativeClass = @"Button",
@@ -68,7 +88,7 @@ namespace UftDeveloperDataTransfer
         {
             fileNameEditField.SendKeys(fileName);
 
-
+            if (!fileNameEditField.Exists()) throw new Exception("");
             openButton.Click();
         }
 
@@ -82,6 +102,7 @@ namespace UftDeveloperDataTransfer
             // Select file in specific path 
 
             OpenGivenFile(fileName);
+
 
 
 

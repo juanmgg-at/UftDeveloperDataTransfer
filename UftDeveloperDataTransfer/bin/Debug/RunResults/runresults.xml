@@ -1,0 +1,245 @@
+<Results>
+  <GeneralInfo>
+    <RunStartTime>2025-06-19 17:40:04</RunStartTime>
+    <Timezone>GMT-0500 (Central Daylight Time)</Timezone>
+    <OrchestrationToolName>UnitTestAdapter:</OrchestrationToolName>
+    <ReportTitle>UFT Developer Report</ReportTitle>
+  </GeneralInfo>
+  <ReportNode type="Run">
+    <Data>
+      <StartTime>2025-06-19 17:40:04</StartTime>
+      <Duration>10</Duration>
+      <Result>Passed</Result>
+      <ErrorText></ErrorText>
+      <Links></Links>
+      <Extension>
+        <Any>
+          <IconKey>Run</IconKey>
+          <IsHtmlErrorText>true</IsHtmlErrorText>
+        </Any>
+      </Extension>
+      <Name>Run Results</Name>
+      <Environment>
+        <OSInfo><![CDATA[Windows_NT 10.0.19045]]></OSInfo>
+        <HostName><![CDATA[ABE-Automation]]></HostName>
+        <NumberOfCores>8</NumberOfCores>
+        <TotalMemory>14917</TotalMemory>
+        <Locale><![CDATA[en-US]]></Locale>
+        <Timezone><![CDATA[GMT-0500 (Central Daylight Time)]]></Timezone>
+        <User><![CDATA[corp\gutierrj]]></User>
+      </Environment>
+      <TestedApplication />
+      <ToolName>UFT Developer</ToolName>
+      <ToolVersion><![CDATA[2023.0]]></ToolVersion>
+      <Description> </Description>
+    </Data>
+    <ReportNode type="Assembly">
+      <Data>
+        <Name>UftDeveloperDataTransfer</Name>
+        <Description><![CDATA[Version: 1.0.0.0]]></Description>
+        <StartTime>6/19/2025 5:40:05 PM</StartTime>
+        <Duration>10</Duration>
+        <Result>Passed</Result>
+        <Video></Video>
+        <ErrorText></ErrorText>
+        <Links></Links>
+        <Extension>
+          <Any>
+            <IconKey>Assembly</IconKey>
+            <IsHtmlErrorText>true</IsHtmlErrorText>
+          </Any>
+        </Extension>
+      </Data>
+      <ReportNode type="Namespace">
+        <Data>
+          <Name>UftDeveloperDataTransfer</Name>
+          <Description><![CDATA[]]></Description>
+          <StartTime>6/19/2025 5:40:05 PM</StartTime>
+          <Duration>10</Duration>
+          <Result>Passed</Result>
+          <Video></Video>
+          <ErrorText></ErrorText>
+          <Links></Links>
+          <Extension>
+            <Any>
+              <IconKey>Namespace</IconKey>
+              <IsHtmlErrorText>true</IsHtmlErrorText>
+            </Any>
+          </Extension>
+        </Data>
+        <ReportNode type="Class">
+          <Data>
+            <Name>UftDeveloperTest</Name>
+            <Description><![CDATA[]]></Description>
+            <StartTime>6/19/2025 5:40:05 PM</StartTime>
+            <Duration>10</Duration>
+            <Result>Passed</Result>
+            <Video></Video>
+            <ErrorText></ErrorText>
+            <Links></Links>
+            <Extension>
+              <Any>
+                <IconKey>Class</IconKey>
+                <IsHtmlErrorText>true</IsHtmlErrorText>
+              </Any>
+            </Extension>
+          </Data>
+          <ReportNode type="Test">
+            <Data>
+              <Name><![CDATA[_002_TestOpenSimulationFile]]></Name>
+              <Description><![CDATA[]]></Description>
+              <StartTime>2025-06-19 17:40:05</StartTime>
+              <Duration>10</Duration>
+              <Result>Passed</Result>
+              <ErrorText></ErrorText>
+              <Links></Links>
+              <Extension>
+                <Any>
+                  <IconKey>Test</IconKey>
+                  <IsHtmlErrorText>true</IsHtmlErrorText>
+                </Any>
+              </Extension>
+            </Data>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[OK.Click]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
+                <StartTime>2025-06-19 17:40:05</StartTime>
+                <Duration>1</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>WPF.Window</Type>
+                          <Name><![CDATA[Window_1]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>WPF.Button</Type>
+                          <Name><![CDATA[OK]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Click</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[Name]]></Name>
+                          <Value><![CDATA[OK]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>WPF.Window</Type>
+                            <Name><![CDATA[Window_1]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>WPF.Button</Type>
+                            <Name><![CDATA[OK]]></Name>
+                            <IconKey><![CDATA[Button]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>Button</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[Yes.Click]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
+                <StartTime>2025-06-19 17:40:06</StartTime>
+                <Duration>2</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>WPF.Window</Type>
+                          <Name><![CDATA[Enable two-step flash convergence? This feature allows Aspen Plus to perform some extra flash iterations after meeting the flash convergence tolerance to attempt tighter convergence. The flash is still considered converged if the tighter tolerance cannot be met. The two-step flash convergence is recommended as it can lead to improved flowsheet tear convergence and tighter tolerances.]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>WPF.Button</Type>
+                          <Name><![CDATA[Yes]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Click</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[Name]]></Name>
+                          <Value><![CDATA[Yes]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>WPF.Window</Type>
+                            <Name><![CDATA[Enable two-step flash convergence? This feature allows Aspen Plus to perform some extra flash iterations after meeting the flash convergence tolerance to attempt tighter convergence. The flash is still considered converged if the tighter tolerance cannot be met. The two-step flash convergence is recommended as it can lead to improved flowsheet tear convergence and tighter tolerances.]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>WPF.Button</Type>
+                            <Name><![CDATA[Yes]]></Name>
+                            <IconKey><![CDATA[Button]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>Button</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Verification">
+              <Data>
+                <Name>Simulation file was opened successfully</Name>
+                <StartTime>2025-06-19 17:40:14</StartTime>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <Verification>
+                      <Operation>IsTrue</Operation>
+                      <Data><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>condition</td></tr><tr><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><tr><td class='ex-value'>true</td></tr></tr></table>]]></Data>
+                    </Verification>
+                    <IconKey>VerifySuccess</IconKey>
+                    <CustomUIElements>
+                      <ErrorListItemStatusIndicatorIconKey>VerifySuccess</ErrorListItemStatusIndicatorIconKey>
+                      <HideFlowTreeNodeStatusIndicator>true</HideFlowTreeNodeStatusIndicator>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+          </ReportNode>
+        </ReportNode>
+      </ReportNode>
+    </ReportNode>
+  </ReportNode>
+</Results>

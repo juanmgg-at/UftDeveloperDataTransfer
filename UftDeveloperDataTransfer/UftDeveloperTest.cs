@@ -23,8 +23,6 @@ namespace UftDeveloperDataTransfer
         }
 
 
-
-
         [TestMethod]
         public void _001_TestLaunchAspenPlus()
         {
@@ -34,8 +32,9 @@ namespace UftDeveloperDataTransfer
             Utility utility = new Utility();
             utility.launchExe(exePath);
 
+            OpenSimulationPageWPF openSimulationPage = new OpenSimulationPageWPF();
 
-            VerifyAspenPlusIsOpened();
+            openSimulationPage.VerifyAspenPlusIsOpened();
 
         }
 
@@ -43,26 +42,30 @@ namespace UftDeveloperDataTransfer
         public void _002_TestOpenSimulationFile()
         {
 
-            LaunchOpenFileWindow();
+            OpenSimulationPageWPF openSimulationPage = new OpenSimulationPageWPF();
+            OpenDialogStdWin openDialog = new OpenDialogStdWin();
+            SimulationPageWPF simulationPage = new SimulationPageWPF();
+
+
+            
+            //openSimulationPage.LaunchOpenFileWindow();
+
+            ////openDialog.OpenSimulationFileInGivenPath(@"C:\Users\gutierrj\source\repos\datatransfer-ProII\Aspen Plus Automation Transfer\Aspen Plus Files\Pump&Pump Curves", "Pump.bkp");  
+            
+            //openDialog.OpenSimulationFileInGivenPath(@"C:\Users\gutierrj\source\repos\datatransfer-ProII\Aspen Plus Automation Transfer\Aspen Plus Files\Heater&Heat Exchange Side", "Heater_Cooler.bkp");
+
+            simulationPage.VerifySimulationFileIsOpened("Heater_Cooler.bkp");
 
         }
 
 
 
-        [TestMethod]
-        public void _003_TestOpenSimFile()
+        //[TestMethod]
+        public void Test()
         {
 
-            OpenDialogStdWin openDialog = new OpenDialogStdWin();
-
-
-
-            openDialog.OpenSimulationFileInGivenPath(@"C:\Users\gutierrj\source\repos\datatransfer-ProII\Aspen Plus Automation Transfer\Aspen Plus Files\Pump&Pump Curves", "Pump.bkp");
-
-            VerifySimulationFileIsOpened("Pump.bkp");
+            
         }
-
-
 
 
 
