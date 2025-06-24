@@ -87,5 +87,78 @@ namespace UftDeveloperDataTransfer
 
             Verify.IsTrue(pumpBkpAspenPlusV15AspenONEWindow.Exists(), "Simulation file was opened successfully");
         }
+
+
+
+
+
+        public void Test()
+        {
+
+
+            var simulationFileMainWindow = Desktop.Describe<IWindow>(new WindowDescription
+            {
+                ObjectName = @"apwnShellWindow",
+                FullType = @"window"
+            });
+
+            simulationFileMainWindow.Activate();
+
+            var fileButton = simulationFileMainWindow
+            .Describe<IButton>(new ButtonDescription
+            {
+                ObjectName = @"orbPanel",
+                Text = @"File"
+            });
+
+
+            fileButton.Click();
+
+            var closeUiObject = simulationFileMainWindow
+                        .Describe<IUiObject>(new UiObjectDescription
+                        {
+                            ObjectName = @"CloseDocument"
+                        });
+
+            closeUiObject.Click();
+
+            var resultsSummaryWindow = Desktop.Describe<IWindow>(new WindowDescription
+            {
+                WindowTitleRegExp = @"Results Summary",
+                ObjectName = @"Window_1",
+                FullType = @"window"
+            });
+
+
+            resultsSummaryWindow.Activate();
+
+            var noButton = resultsSummaryWindow
+                        .Describe<IButton>(new ButtonDescription
+                        {
+                            ObjectName = @"btn1",
+                            Text = @"No"
+                        });
+
+            noButton.Click();
+
+
+            var aspenPlusWindow = Desktop.Describe<IWindow>(new WindowDescription
+            {
+                WindowTitleRegExp = @"Aspen Plus",
+                ObjectName = @"Window_1",
+                FullType = @"window"
+            });
+
+            aspenPlusWindow.Activate();
+
+            var noButton2 = aspenPlusWindow
+                        .Describe<IButton>(new ButtonDescription
+                        {
+                            ObjectName = @"btn1",
+                            Text = @"No"
+                        });
+
+            noButton2.Click();
+        }
     }
 }

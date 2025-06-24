@@ -47,24 +47,28 @@ namespace UftDeveloperDataTransfer
             SimulationPageWPF simulationPage = new SimulationPageWPF();
 
 
-            
-            //openSimulationPage.LaunchOpenFileWindow();
 
-            ////openDialog.OpenSimulationFileInGivenPath(@"C:\Users\gutierrj\source\repos\datatransfer-ProII\Aspen Plus Automation Transfer\Aspen Plus Files\Pump&Pump Curves", "Pump.bkp");  
-            
+            openSimulationPage.LaunchOpenFileWindow();
+
+            openDialog.OpenSimulationFileInGivenPath(@"C:\Users\gutierrj\source\repos\datatransfer-ProII\Aspen Plus Automation Transfer\Aspen Plus Files\Pump&Pump Curves", "Pump.bkp");
+
             //openDialog.OpenSimulationFileInGivenPath(@"C:\Users\gutierrj\source\repos\datatransfer-ProII\Aspen Plus Automation Transfer\Aspen Plus Files\Heater&Heat Exchange Side", "Heater_Cooler.bkp");
 
-            simulationPage.VerifySimulationFileIsOpened("Heater_Cooler.bkp");
+            simulationPage.VerifySimulationFileIsOpened("Pump.bkp");
 
         }
 
 
 
-        //[TestMethod]
+        [TestMethod]
         public void Test()
         {
 
-            
+
+            SimulationPageWPF simulationPage = new SimulationPageWPF();
+            simulationPage.Test();
+
+
         }
 
 

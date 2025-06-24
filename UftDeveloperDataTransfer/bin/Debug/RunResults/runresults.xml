@@ -1,15 +1,15 @@
 <Results>
   <GeneralInfo>
-    <RunStartTime>2025-06-19 17:40:04</RunStartTime>
+    <RunStartTime>2025-06-24 12:30:54</RunStartTime>
     <Timezone>GMT-0500 (Central Daylight Time)</Timezone>
     <OrchestrationToolName>UnitTestAdapter:</OrchestrationToolName>
     <ReportTitle>UFT Developer Report</ReportTitle>
   </GeneralInfo>
   <ReportNode type="Run">
     <Data>
-      <StartTime>2025-06-19 17:40:04</StartTime>
-      <Duration>10</Duration>
-      <Result>Passed</Result>
+      <StartTime>2025-06-24 12:30:54</StartTime>
+      <Duration>26</Duration>
+      <Result>Failed</Result>
       <ErrorText></ErrorText>
       <Links></Links>
       <Extension>
@@ -23,7 +23,7 @@
         <OSInfo><![CDATA[Windows_NT 10.0.19045]]></OSInfo>
         <HostName><![CDATA[ABE-Automation]]></HostName>
         <NumberOfCores>8</NumberOfCores>
-        <TotalMemory>14917</TotalMemory>
+        <TotalMemory>18723</TotalMemory>
         <Locale><![CDATA[en-US]]></Locale>
         <Timezone><![CDATA[GMT-0500 (Central Daylight Time)]]></Timezone>
         <User><![CDATA[corp\gutierrj]]></User>
@@ -36,10 +36,10 @@
     <ReportNode type="Assembly">
       <Data>
         <Name>UftDeveloperDataTransfer</Name>
-        <Description><![CDATA[Version: 1.0.0.0]]></Description>
-        <StartTime>6/19/2025 5:40:05 PM</StartTime>
-        <Duration>10</Duration>
-        <Result>Passed</Result>
+        <Description><![CDATA[<pre>Version: 1.0.0.0</pre>]]></Description>
+        <StartTime>6/24/2025 12:30:55 PM</StartTime>
+        <Duration>25</Duration>
+        <Result>Failed</Result>
         <Video></Video>
         <ErrorText></ErrorText>
         <Links></Links>
@@ -53,10 +53,10 @@
       <ReportNode type="Namespace">
         <Data>
           <Name>UftDeveloperDataTransfer</Name>
-          <Description><![CDATA[]]></Description>
-          <StartTime>6/19/2025 5:40:05 PM</StartTime>
-          <Duration>10</Duration>
-          <Result>Passed</Result>
+          <Description><![CDATA[<pre></pre>]]></Description>
+          <StartTime>6/24/2025 12:30:55 PM</StartTime>
+          <Duration>25</Duration>
+          <Result>Failed</Result>
           <Video></Video>
           <ErrorText></ErrorText>
           <Links></Links>
@@ -70,10 +70,10 @@
         <ReportNode type="Class">
           <Data>
             <Name>UftDeveloperTest</Name>
-            <Description><![CDATA[]]></Description>
-            <StartTime>6/19/2025 5:40:05 PM</StartTime>
-            <Duration>10</Duration>
-            <Result>Passed</Result>
+            <Description><![CDATA[<pre></pre>]]></Description>
+            <StartTime>6/24/2025 12:30:55 PM</StartTime>
+            <Duration>25</Duration>
+            <Result>Failed</Result>
             <Video></Video>
             <ErrorText></ErrorText>
             <Links></Links>
@@ -87,11 +87,26 @@
           <ReportNode type="Test">
             <Data>
               <Name><![CDATA[_002_TestOpenSimulationFile]]></Name>
-              <Description><![CDATA[]]></Description>
-              <StartTime>2025-06-19 17:40:05</StartTime>
-              <Duration>10</Duration>
-              <Result>Passed</Result>
-              <ErrorText></ErrorText>
+              <Description><![CDATA[<pre></pre>]]></Description>
+              <StartTime>2025-06-24 12:30:55</StartTime>
+              <Duration>25</Duration>
+              <Result>Failed</Result>
+              <ErrorText><![CDATA[<b>Operation '_002_TestOpenSimulationFile' failed:</b><BR/><pre>HP.LFT.SDK.ReplayObjectNotFoundException: Cannot identify the object &quot;StdWin.IDialog&quot;.
+Verify that this object&apos;s properties match an object currently displayed in your application.
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuterBase.HandleReplayError(Int32 errorCode, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.HandleError(Action`2 onError, Int32 status, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.Send(String messageType, IDictionary`2 data, Action`2 onError)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuter.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectBase.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.StdWin.Window.&lt;Activate&gt;b__31_0()
+   at HP.LFT.SDK.OperationExecutionWrapper.&lt;&gt;c__DisplayClass19_0.&lt;ExecuteWithEvents&gt;b__0()
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEventsInternally[T](ITestObject testObject, Object additionalInfo, Func`1 innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(ITestObject testObject, Object additionalInfo, Action innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(Action innerAction, Action originalMethod, Boolean reportOnlyOnError, ITestObject testObject, Object additionalInfo)
+   at HP.LFT.SDK.StdWin.Window.Activate()
+   at UftDeveloperDataTransfer.OpenDialogStdWin.MoveToGivenPath(String filePath) in C:\Users\gutierrj\source\repos\UftDeveloperDataTransfer\UftDeveloperDataTransfer\StdWin\OpenDialogStdWin.cs:line 75
+   at UftDeveloperDataTransfer.OpenDialogStdWin.OpenSimulationFileInGivenPath(String filePath, String fileName) in C:\Users\gutierrj\source\repos\UftDeveloperDataTransfer\UftDeveloperDataTransfer\StdWin\OpenDialogStdWin.cs:line 100
+   at UftDeveloperDataTransfer.UftDeveloperTest._002_TestOpenSimulationFile() in C:\Users\gutierrj\source\repos\UftDeveloperDataTransfer\UftDeveloperDataTransfer\UftDeveloperTest.cs:line 53</pre>]]></ErrorText>
               <Links></Links>
               <Extension>
                 <Any>
@@ -102,9 +117,65 @@
             </Data>
             <ReportNode type="Step">
               <Data>
-                <Name><![CDATA[OK.Click]]></Name>
+                <Name><![CDATA[<No Document> - Aspen Plus V15 - aspenONE.Activate]]></Name>
+                <Description><![CDATA[]]></Description>
+                <StartTime>2025-06-24 12:30:55</StartTime>
+                <Duration>4</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>WPF.Window</Type>
+                          <Name><![CDATA[<No Document> - Aspen Plus V15 - aspenONE]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Activate</Operation>
+                      <OperationData><![CDATA[]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[WindowTitleRegExp]]></Name>
+                          <Value><![CDATA[<No Document> - Aspen Plus V15 - aspenONE]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[ObjectName]]></Name>
+                          <Value><![CDATA[apwnShellWindow]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[FullType]]></Name>
+                          <Value><![CDATA[window]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>WPF.Window</Type>
+                            <Name><![CDATA[<No Document> - Aspen Plus V15 - aspenONE]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>Window</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[Open.Click]]></Name>
                 <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
-                <StartTime>2025-06-19 17:40:05</StartTime>
+                <StartTime>2025-06-24 12:30:59</StartTime>
                 <Duration>1</Duration>
                 <Result>Passed</Result>
                 <ErrorText></ErrorText>
@@ -116,19 +187,23 @@
                       <Path>
                         <Object>
                           <Type>WPF.Window</Type>
-                          <Name><![CDATA[Window_1]]></Name>
+                          <Name><![CDATA[<No Document> - Aspen Plus V15 - aspenONE]]></Name>
                         </Object>
                         <Object>
                           <Type>WPF.Button</Type>
-                          <Name><![CDATA[OK]]></Name>
+                          <Name><![CDATA[Open]]></Name>
                         </Object>
                       </Path>
                       <Operation>Click</Operation>
                       <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
                       <Properties>
                         <Property>
-                          <Name><![CDATA[Name]]></Name>
-                          <Value><![CDATA[OK]]></Value>
+                          <Name><![CDATA[Text]]></Name>
+                          <Value><![CDATA[Open]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[ObjectName]]></Name>
+                          <Value><![CDATA[OpenCase]]></Value>
                         </Property>
                       </Properties>
                     </TestObject>
@@ -138,12 +213,12 @@
                         <Path>
                           <Object>
                             <Type>WPF.Window</Type>
-                            <Name><![CDATA[Window_1]]></Name>
+                            <Name><![CDATA[<No Document> - Aspen Plus V15 - aspenONE]]></Name>
                             <IconKey><![CDATA[Window]]></IconKey>
                           </Object>
                           <Object>
                             <Type>WPF.Button</Type>
-                            <Name><![CDATA[OK]]></Name>
+                            <Name><![CDATA[Open]]></Name>
                             <IconKey><![CDATA[Button]]></IconKey>
                           </Object>
                         </Path>
@@ -159,12 +234,27 @@
             </ReportNode>
             <ReportNode type="Step">
               <Data>
-                <Name><![CDATA[Yes.Click]]></Name>
-                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
-                <StartTime>2025-06-19 17:40:06</StartTime>
-                <Duration>2</Duration>
-                <Result>Passed</Result>
-                <ErrorText></ErrorText>
+                <Name><![CDATA[Standard Windows.Dialog.Activate]]></Name>
+                <Description><![CDATA[]]></Description>
+                <StartTime>2025-06-24 12:30:59</StartTime>
+                <Duration>21</Duration>
+                <Result>Failed</Result>
+                <ErrorText><![CDATA[<b>Operation 'Standard Windows.Dialog.Activate' failed:</b><BR/><pre>HP.LFT.SDK.ReplayObjectNotFoundException: Cannot identify the object &quot;StdWin.IDialog&quot;.
+Verify that this object&apos;s properties match an object currently displayed in your application.
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuterBase.HandleReplayError(Int32 errorCode, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.HandleError(Action`2 onError, Int32 status, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.Send(String messageType, IDictionary`2 data, Action`2 onError)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuter.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectBase.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.StdWin.Window.&lt;Activate&gt;b__31_0()
+   at HP.LFT.SDK.OperationExecutionWrapper.&lt;&gt;c__DisplayClass19_0.&lt;ExecuteWithEvents&gt;b__0()
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEventsInternally[T](ITestObject testObject, Object additionalInfo, Func`1 innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(ITestObject testObject, Object additionalInfo, Action innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(Action innerAction, Action originalMethod, Boolean reportOnlyOnError, ITestObject testObject, Object additionalInfo)
+   at HP.LFT.SDK.StdWin.Window.Activate()
+   at UftDeveloperDataTransfer.OpenDialogStdWin.MoveToGivenPath(String filePath) in C:\Users\gutierrj\source\repos\UftDeveloperDataTransfer\UftDeveloperDataTransfer\StdWin\OpenDialogStdWin.cs:line 75
+   at UftDeveloperDataTransfer.OpenDialogStdWin.OpenSimulationFileInGivenPath(String filePath, String fileName) in C:\Users\gutierrj\source\repos\UftDeveloperDataTransfer\UftDeveloperDataTransfer\StdWin\OpenDialogStdWin.cs:line 100
+   at UftDeveloperDataTransfer.UftDeveloperTest._002_TestOpenSimulationFile() in C:\Users\gutierrj\source\repos\UftDeveloperDataTransfer\UftDeveloperDataTransfer\UftDeveloperTest.cs:line 53</pre>]]></ErrorText>
                 <Links></Links>
                 <Extension>
                   <Any>
@@ -172,20 +262,28 @@
                     <TestObject>
                       <Path>
                         <Object>
-                          <Type>WPF.Window</Type>
-                          <Name><![CDATA[Enable two-step flash convergence? This feature allows Aspen Plus to perform some extra flash iterations after meeting the flash convergence tolerance to attempt tighter convergence. The flash is still considered converged if the tighter tolerance cannot be met. The two-step flash convergence is recommended as it can lead to improved flowsheet tear convergence and tighter tolerances.]]></Name>
-                        </Object>
-                        <Object>
-                          <Type>WPF.Button</Type>
-                          <Name><![CDATA[Yes]]></Name>
+                          <Type>Standard Windows.Dialog</Type>
+                          <Name><![CDATA[[Dialog]]]></Name>
                         </Object>
                       </Path>
-                      <Operation>Click</Operation>
-                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
+                      <Operation>Activate</Operation>
+                      <OperationData><![CDATA[]]></OperationData>
                       <Properties>
                         <Property>
-                          <Name><![CDATA[Name]]></Name>
-                          <Value><![CDATA[Yes]]></Value>
+                          <Name><![CDATA[IsChildWindow]]></Name>
+                          <Value><![CDATA[false]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[IsOwnedWindow]]></Name>
+                          <Value><![CDATA[true]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[NativeClass]]></Name>
+                          <Value><![CDATA[#32770]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[Text]]></Name>
+                          <Value><![CDATA[Open]]></Value>
                         </Property>
                       </Properties>
                     </TestObject>
@@ -194,44 +292,16 @@
                       <TestObject>
                         <Path>
                           <Object>
-                            <Type>WPF.Window</Type>
-                            <Name><![CDATA[Enable two-step flash convergence? This feature allows Aspen Plus to perform some extra flash iterations after meeting the flash convergence tolerance to attempt tighter convergence. The flash is still considered converged if the tighter tolerance cannot be met. The two-step flash convergence is recommended as it can lead to improved flowsheet tear convergence and tighter tolerances.]]></Name>
-                            <IconKey><![CDATA[Window]]></IconKey>
-                          </Object>
-                          <Object>
-                            <Type>WPF.Button</Type>
-                            <Name><![CDATA[Yes]]></Name>
-                            <IconKey><![CDATA[Button]]></IconKey>
+                            <Type>Standard Windows.Dialog</Type>
+                            <Name><![CDATA[[Dialog]]]></Name>
+                            <IconKey><![CDATA[Dialog]]></IconKey>
                           </Object>
                         </Path>
                       </TestObject>
                     </Descriptive>
-                    <IconKey>Button</IconKey>
+                    <IconKey>Dialog</IconKey>
                     <CustomUIElements>
                       <DescriptionLabel>Data</DescriptionLabel>
-                    </CustomUIElements>
-                  </Any>
-                </Extension>
-              </Data>
-            </ReportNode>
-            <ReportNode type="Verification">
-              <Data>
-                <Name>Simulation file was opened successfully</Name>
-                <StartTime>2025-06-19 17:40:14</StartTime>
-                <Result>Passed</Result>
-                <ErrorText></ErrorText>
-                <Links></Links>
-                <Extension>
-                  <Any>
-                    <IsHtmlErrorText>true</IsHtmlErrorText>
-                    <Verification>
-                      <Operation>IsTrue</Operation>
-                      <Data><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>condition</td></tr><tr><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><tr><td class='ex-value'>true</td></tr></tr></table>]]></Data>
-                    </Verification>
-                    <IconKey>VerifySuccess</IconKey>
-                    <CustomUIElements>
-                      <ErrorListItemStatusIndicatorIconKey>VerifySuccess</ErrorListItemStatusIndicatorIconKey>
-                      <HideFlowTreeNodeStatusIndicator>true</HideFlowTreeNodeStatusIndicator>
                     </CustomUIElements>
                   </Any>
                 </Extension>
